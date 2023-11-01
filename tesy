@@ -13,3 +13,20 @@ document.querySelectorAll(".k-my-fund-button").forEach((item) => {
 
   });
 });
+
+
+document.querySelectorAll(".k-my-fund-button").forEach((item) => {
+  let title = document.title;
+  item.addEventListener("click", (e) => {
+     let classNumber = item.classList[1].replace(/\D/g, '')
+     let card = e.target.closest('.performance-graph')
+     let cardTitle = card.querySelector('h4');
+  
+      if(classNumber == '2'){
+         ...
+      }else if(classNumber == '3'){
+         ...
+      }
+
+  });
+});
